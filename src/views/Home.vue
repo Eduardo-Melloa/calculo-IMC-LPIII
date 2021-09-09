@@ -94,15 +94,15 @@ export default defineComponent({
     async calcularIMC(){
       const IMC=this.peso/(this.altura*this.altura);
       if (IMC<18.5){
-        this.mensagem = 'Seu IMC é: '+IMC+'\nVoce está classificado com Magreza'
+        this.mensagem = this.nome+' seu IMC é: '+IMC+'\nVoce está classificado com Magreza'
       }else if (IMC<24.9){
-        this.mensagem = 'Seu IMC é: '+IMC+'\nVoce está classificado com IMC Normal'        
+        this.mensagem = this.nome+' seu IMC é: '+IMC+'\nVoce está classificado com IMC Normal'        
       }else if (IMC<29.9){
-        this.mensagem = 'Seu IMC é: '+IMC+'\nVoce está classificado com Sobrepeso'        
+        this.mensagem = this.nome+' seu IMC é: '+IMC+'\nVoce está classificado com Sobrepeso'        
       }else if (IMC<39.9){
-        this.mensagem = 'Seu IMC é: '+IMC+'\nVoce está classificado com Obesidade'        
+        this.mensagem = this.nome+' seu IMC é: '+IMC+'\nVoce está classificado com Obesidade'        
       }else {
-        this.mensagem = 'Seu IMC é: '+IMC+'\nVoce está classificado com Obesidade II'        
+        this.mensagem = this.nome+' seu IMC é: '+IMC+'\nVoce está classificado com Obesidade II'        
       }
       this.calculado=true;
     },
