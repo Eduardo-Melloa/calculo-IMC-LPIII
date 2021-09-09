@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "calculo-IMC-LPIII",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
