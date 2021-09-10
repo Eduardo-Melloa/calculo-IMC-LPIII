@@ -22,7 +22,7 @@
             <ion-row>
               <ion-col>
                 <ion-label>Altura:</ion-label>
-                <ion-input type="text" id="altura" v-model.number="altura" clear-on-edit="true" required></ion-input>
+                <ion-input type="text" id="altura" placeholder="Digite a sua altura" v-model.number="altura" clear-on-edit="true" required></ion-input>
               </ion-col>
             </ion-row>
             
@@ -30,7 +30,7 @@
             <ion-row>
               <ion-col>
                 <ion-label>Peso:</ion-label>
-                <ion-input inputmode="numeric" type="number" id="peso" v-model.number="peso" clear-on-edit="true" required></ion-input>
+                <ion-input type="number" id="peso" placeholder="Digite o seu peso" v-model.number="peso" clear-on-edit="true" required></ion-input>
               </ion-col>
             </ion-row>
 
@@ -136,8 +136,6 @@ ion-input{
   border:solid 2px black;
   background: rgba(255, 255, 255, 0.082);
   border-radius: 10px;
-  --placeholder-color:white;
-  color:white;
   font-size: 15px;
 }
 ion-title{
